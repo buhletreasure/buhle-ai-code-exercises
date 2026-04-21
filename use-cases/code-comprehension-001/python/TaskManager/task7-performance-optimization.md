@@ -8,7 +8,7 @@ I selected the **Slow Code Analysis (Python)** scenario using `inventory_analysi
 ## Problem Description
 The function is used to find pairs of products whose combined price is close to a target price.
 
-According to the exercise, the function typically processes 5,000+ products and currently takes around 20–30 seconds to run. This makes the product recommendation page slow for users. :contentReference[oaicite:2]{index=2}
+According to the exercise, the function typically processes 5,000+ products and currently takes around 20–30 seconds to run. This makes the product recommendation page slow for users.
 
 ---
 

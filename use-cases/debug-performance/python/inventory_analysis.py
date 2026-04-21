@@ -1,4 +1,5 @@
 # inventory_analysis.py
+
 def find_product_combinations(products, target_price, price_margin=10):
     """
     Find all pairs of products where the combined price is within
@@ -14,36 +15,31 @@ def find_product_combinations(products, target_price, price_margin=10):
     """
     results = []
 
-    # For each possible pair of products
+    # Check each unique pair only once (optimized)
     for i in range(len(products)):
         if i % 100 == 0:
             print(f"Processing product {i+1} of {len(products)}")
-        for j in range(len(products)):
-            # Skip comparing a product with itself
-            if i != j:
-                product1 = products[i]
-                product2 = products[j]
 
-                # Calculate combined price
-                combined_price = product1['price'] + product2['price']
+        for j in range(i + 1, len(products)):
+            product1 = products[i]
+            product2 = products[j]
 
-                # Check if the combined price is within the target range
-                if (target_price - price_margin) <= combined_price <= (target_price + price_margin):
-                    # Avoid duplicates like (product1, product2) and (product2, product1)
-                    if not any(r['product1']['id'] == product2['id'] and
-                               r['product2']['id'] == product1['id'] for r in results):
+            # Calculate combined price
+            combined_price = product1['price'] + product2['price']
 
-                        pair = {
-                            'product1': product1,
-                            'product2': product2,
-                            'combined_price': combined_price,
-                            'price_difference': abs(target_price - combined_price)
-                        }
-                        results.append(pair)
+            # Check if within target range
+            if (target_price - price_margin) <= combined_price <= (target_price + price_margin):
+                results.append({
+                    'product1': product1,
+                    'product2': product2,
+                    'combined_price': combined_price,
+                    'price_difference': abs(target_price - combined_price)
+                })
 
-    # Sort by price difference from target
+    # Sort by closeness to target price
     results.sort(key=lambda x: x['price_difference'])
     return results
+
 
 # Example usage
 if __name__ == "__main__":
