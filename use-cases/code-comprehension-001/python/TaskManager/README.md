@@ -33,3 +33,28 @@ A simple command-line application that allows users to create, manage, and track
 ```bash
 git clone <repository-url>
 cd task-manager
+
+
+
+## Additional Documents
+
+---
+
+## 📌 Where to Find My Work
+
+All my task submissions and code changes are located here:
+
+👉 [View My Work Folder](use-cases/code-comprehension-001/python/TaskManager/)
+
+### Included Work:
+- Task 6 → `task6-error-diagnosis.md`
+- Task 7 → `task7-performance-optimization.md`
+- Task 8 → `task8-ai-verification.md`
+- Task 9 → `task9-test-plan.md`, `task9-reflection.md`, `test_task_priority.py`
+- Task 10 → `task10-function-decomposition.md`
+- Fixed Code → `mergeSort_fixed.js`
+
+📄 Additional PDF documents are located in the root directory of the repository.
+
+---
+
