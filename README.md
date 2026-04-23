@@ -24,6 +24,13 @@ This is still a work in progress - the idea is to capture the various exercise s
 AI Code Exercises – Task Manager and Analysis Tasks
 >>>>>>> 36cf99e114941e639f1a2bca351c2ac9af11e9cf
 
+
+
+
+All my task submissions and code changes are located here:
+
+👉 [View My Work Folder](use-cases/code-comprehension-001/python/TaskManager/)
+
 ### Included Work:
 - Task 6 → `task6-error-diagnosis.md`
 - Task 7 → `task7-performance-optimization.md`
