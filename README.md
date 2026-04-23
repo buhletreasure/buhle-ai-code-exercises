@@ -23,3 +23,13 @@ This is still a work in progress - the idea is to capture the various exercise s
 # buhle-ai-code-exercises
 AI Code Exercises – Task Manager and Analysis Tasks
 >>>>>>> 36cf99e114941e639f1a2bca351c2ac9af11e9cf
+
+### Included Work:
+- Task 6 → `task6-error-diagnosis.md`
+- Task 7 → `task7-performance-optimization.md`
+- Task 8 → `task8-ai-verification.md`
+- Task 9 → `task9-test-plan.md`, `task9-reflection.md`, `test_task_priority.py`
+- Task 10 → `task10-function-decomposition.md`
+- Fixed Code → `mergeSort_fixed.js`
+
+📄 Additional PDF documents are located in the root directory of the repository.
